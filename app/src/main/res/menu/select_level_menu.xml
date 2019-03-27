@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/delete_menu"
+        android:icon="@drawable/delete"
+        android:title="Erase All Result"
+        app:showAsAction="always" />
+
+   <item
+        android:id="@+id/Clear_Year1"
+        android:icon="@drawable/help"
+        android:title="Erase Year One Data"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Clear_Year2"
+        android:icon="@drawable/help"
+        android:title="Erase Year Two Data"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Clear_Year3"
+        android:icon="@drawable/help"
+        android:title="Erase Year Three Data"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/Clear_Year4"
+        android:icon="@drawable/help"
+        android:title="Erase Year Four Data"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Clear_Year5"
+        android:icon="@drawable/help"
+        android:title="Erase Year Five Data"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Clear_Year6"
+        android:icon="@drawable/help"
+        android:title="Erase Year Six Data"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/Contact"
+        android:icon="@drawable/help"
+        android:title="Contact Us"
+        app:showAsAction="never" />
+
+
+
+
+
+
+
+
+</menu>

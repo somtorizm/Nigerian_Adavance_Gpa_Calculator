@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">GPA</string>
+    <string-array name="arrayGrade">
+        <item></item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+    </string-array>
+    <string name="Title">The Nigeria Church</string>
+    <string name="recent_news">The best institutions in Nigeria and one of the best in ok business</string>
+    <string name="in_new">The world is coming to an end yesterday been, Sunday, after too guys came back from the church to explain to the pastor and others</string>
+    <string name="publish_date">2018-01-26 9:27AM</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

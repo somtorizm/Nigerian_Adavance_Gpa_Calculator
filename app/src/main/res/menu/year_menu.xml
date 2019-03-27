@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/Preview"
+        android:icon="@drawable/preview"
+        android:title="Show result"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/SaveResult"
+        android:icon="@drawable/save"
+        android:title="Save"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/ResetInput"
+        android:title="Reset Texts"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Reset_Saved_Input"
+        android:title="Erase Saved Data"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/FQ"
+        android:title="Help"
+        app:showAsAction="never" />
+
+
+
+</menu>

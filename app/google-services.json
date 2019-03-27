@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "518514178300",
+    "firebase_url": "https://nigerian-gpa-calculator.firebaseio.com",
+    "project_id": "nigerian-gpa-calculator",
+    "storage_bucket": "nigerian-gpa-calculator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518514178300:android:b0a357ecc0e52bbb",
+        "android_client_info": {
+          "package_name": "com.vectorinc.ezinwavictor.gpa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "518514178300-02bvajohn9u8qjkr4b520t900q8n43n4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUP3zz6sj0Ynvg8ViCL1X5CPg9GlVj4HA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

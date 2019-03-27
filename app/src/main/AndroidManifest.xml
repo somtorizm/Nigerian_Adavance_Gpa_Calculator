@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.vectorinc.ezinwavictor.gpa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/chart"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/chart"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2642852664128927~5030897225" />
+
+
+        <activity android:name="com.vectorinc.ezinwavictor.gpa.select_level">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.vectorinc.ezinwavictor.gpa.Year_One.Tablayout_Year_One.tablayoutyr1" />
+        <activity android:name="com.vectorinc.ezinwavictor.gpa.Year_Two.TabLayout_yr2.tablayout_year_2" />
+        <activity android:name="com.vectorinc.ezinwavictor.gpa.Year_Three.Tab_layout_yr3.tablayout_yr3" />
+        <activity android:name="com.vectorinc.ezinwavictor.gpa.Year_Four.Tab_layout_yr4.tablayout_yr4" />
+        <activity android:name="com.vectorinc.ezinwavictor.gpa.Year_Five.Tab_layout_yr5.tablayout_yr5" />
+        <activity android:name="com.vectorinc.ezinwavictor.gpa.Year_Six.Tab_Layout_yr6.tablayout_yr6"></activity>
+    </application>
+
+</manifest>

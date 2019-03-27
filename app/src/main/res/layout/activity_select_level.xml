@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fullayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".select_level">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_select_level"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pie_chart_tool_bar">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPA CAL"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingLeft="6dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footer"
+        android:layout_below="@+id/toolbar_select_level">
+
+    <RelativeLayout
+        android:id="@+id/select_level_yr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="10dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:cardBackgroundColor="#000">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="80dp">
+
+                <Spinner
+                    android:id="@+id/spinner_year_selection"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:popupBackground="#000">
+
+                </Spinner>
+
+                <LinearLayout
+                    android:id="@+id/gpa_yearly_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/select_level_yr_gp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:paddingLeft="5dp"
+                        android:text="GP : "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select_level_yr_grade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="5dp"
+                        android:text="GRADE : "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_level_yr_creditload"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="5dp"
+                        android:text="TOTAL CREDITLOAD: "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:outlineAmbientShadowColor="#ffffff"
+                        android:outlineSpotShadowColor="#fafafa"
+                        android:background="#7a9e9e9e" />
+
+                    <Button
+                        android:id="@+id/show_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="end"
+
+                        android:background="@drawable/button"
+
+                        android:text="Next"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+                    <com.google.android.gms.ads.AdView
+                        xmlns:ads="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/adView"
+                        android:background="#000"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        ads:adSize="SMART_BANNER"
+                        ads:adUnitId="ca-app-pub-2642852664128927/5908465249">
+                    </com.google.android.gms.ads.AdView>
+                    <com.google.android.gms.ads.AdView
+                        xmlns:ads="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/adView1"
+                        android:background="#000"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        ads:adSize="SMART_BANNER"
+                        ads:adUnitId="ca-app-pub-2642852664128927/5908465249">
+                    </com.google.android.gms.ads.AdView>
+                    <com.google.android.gms.ads.AdView
+                        xmlns:ads="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/adView3"
+                        android:background="#000"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        ads:adSize="SMART_BANNER"
+                        ads:adUnitId="ca-app-pub-2642852664128927/5908465249">
+                    </com.google.android.gms.ads.AdView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_view"
+            android:layout_alignStart="@id/card_view"
+            android:layout_alignLeft="@id/card_view"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:background="#000"
+            android:orientation="vertical">
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:background="?attr/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+            android:id="@+id/firstrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gp_cumlative"
+                android:layout_marginLeft="3dp"
+                android:paddingLeft="5dp"
+                android:text="CUMULATIVE GRADE SCORE :"
+                android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/firstrow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstrow"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/level_comment_cummlative"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:text="LEVEL COMMENT:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/firstrow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstrow2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/total_credit_load_cumlative"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:text="TOTAL CREDIT LOAD:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/spinner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_layout"
+        android:layout_centerInParent="true"
+
+        android:layout_marginTop="10dp">
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
